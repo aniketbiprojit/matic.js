@@ -77,6 +77,7 @@ export default class ExitManager extends ContractsBase {
 
       case '0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62':
       case '0x4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb':
+      case '0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62':
         logIndex = receipt.logs.findIndex(
           log =>
             log.topics[0].toLowerCase() == logEventSig.toLowerCase() &&
